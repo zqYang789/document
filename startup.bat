@@ -3,17 +3,18 @@
 set username="liuhonglin"
 set password="lhl690"
 set project="wc_hzz_api"
+set svn="https://123.57.70.214/svn/sunsan2019/05_å¾·å·æ­¦åŸæ²³é•¿åˆ¶/02_ä»£ç /wc_hzz_api"
 
 if exist %project% (
-	echo ==============ÏîÄ¿¸üĞÂ==============
+	echo ==============é¡¹ç›®æ›´æ–°==============
 	cd %project%
 	svn update
 ) else (
-	echo ==============ÏîÄ¿¼ì³ö==============
-	svn checkout https://123.57.70.214/svn/sunsan2019/05_µÂÖİÎä³ÇºÓ³¤ÖÆ/02_´úÂë/wc_hzz_api  --username %username% --password %password%
+	echo ==============é¡¹ç›®æ£€å‡º==============
+	svn checkout %svn%  --username %username% --password %password%
 )
-echo ==============ÏîÄ¿¹¹½¨==============
+echo ==============é¡¹ç›®æ„å»º==============
 call gradle build zip
-echo ==============ÏîÄ¿ÔËĞĞ==============
+echo ==============é¡¹ç›®è¿è¡Œ==============
 cd release
 java -Dfile.encoding=utf-8 -jar web_server-1.0.jar --spring.profiles=application.yml
