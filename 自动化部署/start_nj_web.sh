@@ -22,8 +22,9 @@ mv ./http.js ../
 cd ../
 rm -rf http
 cd ../
-echo "===========打包==========="
+echo "===========安装依赖==========="
 npm install --unsafe-perm=true --allow-root
+echo "===========打包==========="
 npm run build
 echo "===========压缩==========="
 zip -r dist.zip dist/
