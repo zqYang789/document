@@ -1,9 +1,9 @@
-username="zhangjia"
-password="zj1598"
-project_name="nj_hzz_api"
-project_url="https://123.57.70.214/svn/sunsan2019/02_德州宁津县河长制系统/08_源代码/nj_hzz_api"
-application_url="https://123.57.70.214/svn/sunsan2019/02_德州宁津县河长制系统/12_版本发布/application"
-start_java_url="https://123.57.70.214/svn/sunsan2019/02_德州宁津县河长制系统/12_版本发布/java"
+username="xxx"
+password="yyy"
+project_name="zzz"
+project_url="mmm"
+application_url="ttt"
+start_java_url="qqq"
 if  [ -d $project_name ];then
 	echo "==============update=============="
 	cd $project_name

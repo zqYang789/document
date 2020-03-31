@@ -1,10 +1,10 @@
 @echo off
-set username="zhangjia"
-set password="zj1598"
-set project_name="nj_hzz_api"
-set project_url="https://123.57.70.214/svn/sunsan2019/02_德州宁津县河长制系统/08_源代码/nj_hzz_api"
-set application_url="https://123.57.70.214/svn/sunsan2019/02_德州宁津县河长制系统/12_版本发布/application"
-set start_java_url="https://123.57.70.214/svn/sunsan2019/02_德州宁津县河长制系统/12_版本发布/java"
+set username="xxx"
+set password="yyy"
+set project_name="zzz"
+set project_url="mmm"
+set application_url="ppp"
+set start_java_url="qqq"
 if exist %project_name% (
 	echo "==============项目更新=============="
 	cd %project_name%
