@@ -1,4 +1,5 @@
 database_backup_url="xxx"
+ip="aaa"
 username="yyy"
 password="zzz"
 back_time=$(date +%Y%m%d%H)
@@ -9,7 +10,7 @@ if  [ ! -d $database_backup_url ];then
 	mkdir $database_backup_url
 fi
 echo "===========数据库导出============"
-mysqldump -h127.0.0.1 -u$username -p$password $backup_databse >$database_backup_url/$sql_name
+mysqldump --single-transaction -h$ip -u$username -p$password --default-character-set=utf8 $backup_databse >$database_backup_url/$sql_name
 
 
 # 1、:set ff 查看文件类型是dos还是linux
